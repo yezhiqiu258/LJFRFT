@@ -36,12 +36,6 @@ function [ y ] = agsp_filter_ARMA( M, b, a, x, T, tol)
 %     M = eye(G.N) - G.L;
 %     tau = 1; T = 10;
 %     y = agsp_filter_ARMA(M, x, [tau], [tau+1, -1], T, 1);
-% 
-% We can vizualize the filtering output for each iterations as follows: 
-%     figure; plot(y')
-% 
-% Andreas Loukas
-% 12 Nov 2016
 
 if ~exist('tol', 'var'), tol = 1e-4; end
 
