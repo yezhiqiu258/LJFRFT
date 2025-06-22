@@ -18,9 +18,7 @@ function [ b, a, rARMA, error ] = agsp_design_ARMA( mu, response, Kb, Ka, radius
 % Note that the polynomial coefficients (b/a) are returned in
 % increasing power form, contrary to matlab's convention. For instance, here 
 % a(0) is the coefficient of L^0. 
-% 
-% Andreas Loukas
-% 12 Nov 2016
+
 
 if ~exist('show', 'var'),   show   = 0;    end
 if ~exist('radius', 'var'), radius = 0.85; end
